@@ -18,6 +18,10 @@
             <p>Captions are generally given in the same language as the original content. It includes relevant sound effects or background noises because the intended audience is those who cannot hear the audio for some reasons.</p>
             <!-- TODO: Put the dog video here. Set the width to 400 pixels and include controls -->
             <!-- Include a track tag with the src attribute set to "dog-video.vtt" -->
+            <video width="400" controls>
+                <source src="assets/videos/dog-video.mp4">
+                <track src="assets/text-tracks/dog-video.vtt" kind="captions" srclang="en" label="EN captions">
+            </video>
         </div>
         <div>
             <h2>Subtitles</h2>
@@ -28,7 +32,13 @@
             </p>
             <!-- TODO: Put the pigeons in love MP4 video here-->
             <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
+            <video width="400" controls>
+            <source src="assets/video/pigeons-in-love.mp4">
+            <track src="assets/text-tracks/pigeons-in-love-english.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+            <track src="assets/text-tracks/pigeons-in-love-french.vtt" kind="subtitles" srclang="fr" label="French Subtitles">
+            </video>
         </div>
+
     </main>
 </body>
 </html>
